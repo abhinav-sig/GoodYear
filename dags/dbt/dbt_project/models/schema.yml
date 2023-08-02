@@ -1,0 +1,61 @@
+VERSION : 2
+
+models:
+  - name: C_CRM
+    columns:
+      - name: msisdn
+        tests:
+          - not_null
+      - name: gender
+        tests:
+          - accepted_values:
+              values: ['MALE', 'FEMALE', 'UNKNOWN']
+      - name: YEAR_OF_BIRTH
+        tests:
+          - not_null
+      - name: SYSTEM_STATUS
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['ACTIVE','SUSPEND','IDLE','DEACTIVE']
+      - name: MOBILE_TYPE
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Prepaid','Postpaid']
+      - name: VALUE_SEGMENT
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Tier_3']
+  - name: C_DEVICE
+    columns:
+      - name: msisdn
+        tests:
+          - not_null
+      - name: imei_tac
+        tests:
+          - not_null
+      - name: brand_name
+        tests:
+          - not_null
+      - name: model_name
+        tests:
+          - not_null
+      - name: os_name
+        tests:
+          - not_null
+      - name: os_vendor
+        tests:
+          - not_null
+  - name: C_REV
+    columns:
+      - name: msisdn
+        tests:
+          - not_null
+      - name: week_number
+        tests:
+          - not_null
+      - name: revenue_usd
+        tests:
+          - not_null

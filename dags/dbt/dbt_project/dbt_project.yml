@@ -1,0 +1,7 @@
+name: 'dbt_project'
+# source : 
+#   - name : RAW
+#     databse : GOOD_YEAR
+#     schema : RAW
+#     tables : 
+#       - name : DEVICE

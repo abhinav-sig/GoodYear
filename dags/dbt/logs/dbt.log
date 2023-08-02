@@ -1,0 +1,36 @@
+[0m14:19:50.316376 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112185510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112184290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11219a5d0>]}
+
+
+============================== 14:19:50.319894 | 7bdfd241-f42e-456e-babe-aee2874b7201 ==============================
+[0m14:19:50.319894 [info ] [MainThread]: Running with dbt=1.5.2
+[0m14:19:50.320201 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': '/Users/sigmoid/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m14:19:50.320513 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/sigmoid/Documents/GoodYear/dags/dbt/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m14:19:50.320871 [debug] [MainThread]: Command `dbt test` failed at 14:19:50.320812 after 0.03 seconds
+[0m14:19:50.321036 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1121710d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10552e790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112185750>]}
+[0m14:19:50.321197 [debug] [MainThread]: Flushing usage events
+[0m14:20:53.467642 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10947d290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10947f110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109484290>]}
+
+
+============================== 14:20:53.470735 | b61f47b6-c015-4c7a-aaf9-199d670c5912 ==============================
+[0m14:20:53.470735 [info ] [MainThread]: Running with dbt=1.5.2
+[0m14:20:53.471110 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/sigmoid/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/sigmoid/Documents/GoodYear/dags/dbt/logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m14:20:53.472035 [error] [MainThread]: Encountered an error:
+Runtime Error
+  dbt cannot run because no profile was specified for this dbt project.
+  To specify a profile for this project, add a line like the this to
+  your dbt_project.yml file:
+  
+  profile: [profile name]
+  
+  Here, [profile name] should be replaced with a profile name
+  defined in your profiles.yml file. You can find profiles.yml here:
+  
+  /Users/sigmoid/.dbt/profiles.yml
+  
+[0m14:20:53.472404 [debug] [MainThread]: Command `dbt test` failed at 14:20:53.472343 after 0.02 seconds
+[0m14:20:53.472577 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109499b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109470f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104c6e810>]}
+[0m14:20:53.472766 [debug] [MainThread]: Flushing usage events
